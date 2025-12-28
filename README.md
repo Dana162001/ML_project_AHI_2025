@@ -27,8 +27,8 @@ This repository contains a structured machine learning analysis how breast cance
 
 ### Reproducibility
 #### Local
-1. Set up Conda environment
-A Conda environment file is provided to fully reproduce the setup used in this project.
+1. Set up [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) environment
+Conda environment file is provided to fully reproduce the setup used in this project.
 
 Create the environment using:
 ```
