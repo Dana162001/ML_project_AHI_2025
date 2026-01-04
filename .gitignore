@@ -6,7 +6,7 @@
 ##
 
 *.csv
-*.png
+# *.png <-- usually I would ignore it but for the sake of this project I am adding the plots to the repo
 *.joblib
 *.h5
 *.zip
