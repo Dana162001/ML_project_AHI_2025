@@ -48,7 +48,7 @@ Note: in each Jupyter Notebook, at the data loading step, the path to the input 
 
 ### Note
 ### Changing the prediction target
-All analyses are written to be easily adjusted at the beginning of the Notebook. To switch the prediction target, simply change the "er" value from:
+All analyses are written to be relatively easy adjust at the beginning of the Notebook. To switch the prediction target, simply change the "er" value from:
 ```
 target_col = "er"
 
@@ -61,6 +61,16 @@ target_col = "node"
 
 X = df_eval.drop(columns=["node"])
 y = df_eval["node"]
+```
+and then also in the cells such as example below change from the new target of interest ("node"):
+```
+# drop patient_id from features after merging
+meta_cols_no_id = ["node", "grade", "size", "age","relapse"]
+```
+to "er":
+```
+# drop patient_id from features after merging
+meta_cols_no_id = ["er", "grade", "size", "age","relapse"]
 ```
 
 
