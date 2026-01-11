@@ -46,6 +46,24 @@ conda activate ML_env
 Note: in each Jupyter Notebook, at the data loading step, the path to the input files should be changed to the directory where the files are saved on your local computer
 
 
+### Note
+### Changing the prediction target
+All analyses are written to be easily adjusted at the beginning of the Notebook. To switch the prediction target, simply change the "er" value from:
+```
+target_col = "er"
+
+X = df_eval.drop(columns=["er"])
+y = df_eval["er"]
+```
+to "node" # or grade/relapse <-- depending on the target of interest
+```
+target_col = "node" 
+
+X = df_eval.drop(columns=["node"])
+y = df_eval["node"]
+```
+
+
 ### Author
 
 Daryna Pikulska 
